@@ -13,7 +13,7 @@ export default function postsReducer(state = initialState, action) {
       return { ...state, loading: true }
 
     case actions.GET_POSTS_SUCCESS:
-      return { posts: actions.payload, loading: false, hasErrors: false }
+      return { posts: action.payload, loading: false, hasErrors: false }
 
     case actions.GET_POSTS_FAILURE:
       return { ...state, loading: false, hasErrors: true }
