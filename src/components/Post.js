@@ -3,7 +3,7 @@ const Post = ({ post }) => {
   return (
     <article>
       <h2>{post.title}</h2>
-      <p>{Post.body.substring(0, 100)} </p>
+      <p>{post.body.substring(0, 100)} </p>
     </article>
   );
 }
